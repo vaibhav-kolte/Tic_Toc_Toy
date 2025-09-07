@@ -43,55 +43,46 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
     }
-    private void doAction(int value){
-        switch(value){
-            case R.id.tv11:
-                binding.tv11.setText(flag?"X":"O");
-                binding.tv11.setClickable(false);
-                flag = !flag;
-                break;
-            case R.id.tv12:
-                binding.tv12.setText(flag?"X":"O");
-                binding.tv12.setClickable(false);
-                flag = !flag;
-                break;
-            case R.id.tv13:
-                binding.tv13.setText(flag?"X":"O");
-                binding.tv13.setClickable(false);
-                flag = !flag;
-                break;
-            case R.id.tv21:
-                binding.tv21.setText(flag?"X":"O");
-                binding.tv21.setClickable(false);
-                flag = !flag;
-                break;
-            case R.id.tv22:
-                binding.tv22.setText(flag?"X":"O");
-                binding.tv22.setClickable(false);
-                flag = !flag;
-                break;
-            case R.id.tv23:
-                binding.tv23.setText(flag?"X":"O");
-                binding.tv23.setClickable(false);
-                flag = !flag;
-                break;
-            case R.id.tv31:
-                binding.tv31.setText(flag?"X":"O");
-                binding.tv31.setClickable(false);
-                flag = !flag;
-                break;
-            case R.id.tv32:
-                binding.tv32.setText(flag?"X":"O");
-                binding.tv32.setClickable(false);
-                flag = !flag;
-                break;
-            case R.id.tv33:
-                binding.tv33.setText(flag?"X":"O");
-                binding.tv33.setClickable(false);
-                flag = !flag;
-                break;
+    private void doAction(int value) {
+        if (value == R.id.tv11) {
+            binding.tv11.setText(flag ? "X" : "O");
+            binding.tv11.setClickable(false);
+            flag = !flag;
+        } else if (value == R.id.tv12) {
+            binding.tv12.setText(flag ? "X" : "O");
+            binding.tv12.setClickable(false);
+            flag = !flag;
+        } else if (value == R.id.tv13) {
+            binding.tv13.setText(flag ? "X" : "O");
+            binding.tv13.setClickable(false);
+            flag = !flag;
+        } else if (value == R.id.tv21) {
+            binding.tv21.setText(flag ? "X" : "O");
+            binding.tv21.setClickable(false);
+            flag = !flag;
+        } else if (value == R.id.tv22) {
+            binding.tv22.setText(flag ? "X" : "O");
+            binding.tv22.setClickable(false);
+            flag = !flag;
+        } else if (value == R.id.tv23) {
+            binding.tv23.setText(flag ? "X" : "O");
+            binding.tv23.setClickable(false);
+            flag = !flag;
+        } else if (value == R.id.tv31) {
+            binding.tv31.setText(flag ? "X" : "O");
+            binding.tv31.setClickable(false);
+            flag = !flag;
+        } else if (value == R.id.tv32) {
+            binding.tv32.setText(flag ? "X" : "O");
+            binding.tv32.setClickable(false);
+            flag = !flag;
+        } else if (value == R.id.tv33) {
+            binding.tv33.setText(flag ? "X" : "O");
+            binding.tv33.setClickable(false);
+            flag = !flag;
         }
     }
+
     @Override
     public void onClick(View v) {
         doAction(v.getId());
